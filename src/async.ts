@@ -51,7 +51,7 @@ export class Async {
             setTimeout(() => {
                 setTimeout(() => {
                     resolve(value);
-                }, 1000);
+                }, 2000);
             })
         })
     }
