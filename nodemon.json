@@ -1,0 +1,14 @@
+{
+    "restartable": "rs",
+    "env": {
+        "NODO_ENV": "dev"
+    },
+    "watch": [
+        "src"
+    ],
+    "ext": "js, ts, json",
+    "ignore": [
+        "tests/**/.ts"
+    ],
+    "exec": "ts-node ./src/index.ts"
+}

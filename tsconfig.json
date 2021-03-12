@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES2020",
+    "module": "CommonJS",
+    "sourceMap": true,
+    // [import * as _ from '_']はエラー、代わりに[import _ = require('_')]を使う
+    "esModuleInterop": true,
+    // 暗黙的にanyとなる値をエラーにする
+    "noImplicitAny": true,
+    // tscのモジュール解決方法
+    "moduleResolution": "node",
+    // コメントを削除する /*! から始まるコメントは残る
+    "removeComments": true,
+    // import時にファイルパスの文字列で大文字と小文字を区別するかどうか
+    "forceConsistentCasingInFileNames": true,
+    // 以前コンパイルを実行したコードと現在のコードとの差分を検出して、必要なファイルだけコンパイルする
+    "incremental": false,
+    // 相対的なカレントディレクトリをどこにするかの指定値 「./」の場合は本ファイルと同一ディレクトリ
+    "baseUrl": "src",
+    "paths": {
+        "*": [
+            "node_modules/*",
+            "src/types/*",
+        ],
+    },
+    // "jsx": "react",
+    // "lib": ["ES2020", "DOM"],
+  },
+  // コンパイルする対象ファイルの場所
+  "include": ["src/**/*"],
+  // コンパイルの対象外
+  "exclude": ["./node_modules"],
+}
