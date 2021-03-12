@@ -2,11 +2,11 @@
   "name": "ts-with-express",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
   "keywords": [],
   "author": "",
   "license": "MIT",
   "scripts": {
+    "lint": "tsc --noEmit",
     "dev": "nodemon -L",
     "build:dev": "SET NODE_ENV=dev & webpack --config ./.webpack/dev.config.js",
     "build": "SET NODE_ENV=prod & webpack --config ./.webpack/prod.config.js",

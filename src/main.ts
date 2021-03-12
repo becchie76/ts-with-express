@@ -1,6 +1,5 @@
 import express from 'express';
-import { AsyncSample } from './async';
-import { AsyncSample2 } from './async2';
+import { AsyncSample, AsyncSample2 } from './';
 
 class Main {
     readonly #port = 3000;
@@ -33,5 +32,5 @@ class Main {
 
 export default new Main().app;
 
-// new AsyncSample();
+new AsyncSample();
 new AsyncSample2();

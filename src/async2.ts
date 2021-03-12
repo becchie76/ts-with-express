@@ -1,5 +1,3 @@
-import e from "express";
-
 export class AsyncSample2 {
     constructor() {
         this.samplePromise().then(([a, b, c]) => {
