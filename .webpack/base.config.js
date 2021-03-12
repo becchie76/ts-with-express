@@ -9,7 +9,7 @@ module.exports = {
     entry: path.resolve('src', 'main.ts'),
     externals: [nodeExternals()],
     output: {
-        filename: 'server.js',
+        filename: 'bundle.js',
         path: BUILD_ROOT,
     },
     module: {
